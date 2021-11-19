@@ -2,13 +2,43 @@
 <html>
 <head>
   <meta charset=utf-8>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css"></link>
+  <link rel="icon" href="./img/yodlr.png">
+
   <title>Yodlr Design Challenge</title>
 </head>
 <body>
-  <h1>Yodlr Design Challenge</h1>
-  <p>
-    <a href="/signup.html">Registration Page</a><br/>
-    <a href="/admin.html">Admin Page</a>
-  </p>
+  <nav>
+    <a href="./index.html" class="logo">
+      yo<span>dler</span>
+    </a>
+    <div>
+      <a id='register-link' href="./signup.html" class="nav-link"> Register</a>
+      <a href="./admin.html" class="nav-link"> Admin Page</a>
+      
+    </div>
+  </nav>
+  <div class="hero">
+    <div class="hero-container">
+      <h1 class='logo logo-lg'>
+        Welcome to yo<span>dler</span>
+      </h1>
+      <p class="subtitle">
+        A collaboration application focused on high-quality team voice communication.</p>
+      <p class="subtitle">
+        No downloads, plugins, or 16-digit codes to remember.
+      </p>
+    </div>
+
+  </div>
+    <!-- <a class='button bg-primary'href="/signup.html">Registration Page</a>
+    <a class='button bg-secondary'href="/admin.html">Admin Page</a> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/API.js"></script>
+    <script src="./js/navHandler.js"></script>
+  
 </body>
 </html>

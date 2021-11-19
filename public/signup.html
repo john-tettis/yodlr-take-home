@@ -2,16 +2,53 @@
 <html>
 <head>
   <meta charset=utf-8>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css"></link>
+  <link rel="icon" href="./img/yodlr.png">
   <title>Yodlr Registration Portal</title>
 </head>
 <body>
-  <h1>Yodlr Registration Portal</h1>
-  <form>
-    Email: <input type="email" name="email"></br>
-    <button type="submit">Submit</button>
-  </form>
-  <p>
-    <a href="/admin.html">Admin Page</a>
-  </p>
+  <nav>
+    <a href="./index.html" class="logo">
+      yo<span>dler</span>
+    </a>
+    <div>
+      <a id='register-link' href="./signup.html" class="nav-link active"> Register</a>
+      <a href="./admin.html" class="nav-link"> Admin Page</a>
+      
+    </div>
+  </nav>
+  <div class="card">
+    <h2 class='card-title'>Yodlr Registration Portal</h2>
+    <form id='register'>
+      <div>
+        <label for="firstName">First Name:</label>
+        <input id='firstName' type="text">
+      </div>
+      <div>
+        <label for="lastName">Last Name:</label>
+        <input id='lastName' type="text">
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input id='email'type="email">
+      </div>
+      <div>
+        <button class='button bg-primary button-full'type="submit">Submit</button>
+      </div>
+    </form>
+    <p class='register-subtext'>
+      Looking for the
+      <a href="/admin.html">Admin Page</a>?
+    </p>
+  </div>
+ 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/API.js"></script>
+  <script src="./js/formHandler.js"></script>
+  <script src="./js/navHandler.js"></script>
 </body>
 </html>

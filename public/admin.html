@@ -2,9 +2,43 @@
 <html>
 <head>
   <meta charset=utf-8>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css"></link>
+  <link rel="icon" href="./img/yodlr.png">
   <title>Yodlr Admin Page</title>
 </head>
 <body>
-  List user data here
+  <nav>
+    <a href="./index.html" class="logo">
+      yo<span>dler</span>
+    </a>
+    <div>
+      <a id='register-link' href="./signup.html" class="nav-link"> Register</a>
+      <a href="./admin.html" class="nav-link active"> Admin Page</a>
+    </div>
+  </nav>
+  <div class="card card-lg">
+    <h1>Admin Page</h1>
+    <div id="user-container">
+      <div id='template' class="user-info">
+        <div class='user-container'>
+          <p class='user-name'></p>
+          <small class='user-email'></small>
+        </div>
+        <div>
+          <button class="button button-sm bg-secondary active-button"></button>
+          <button class="button button-sm bg-danger delete-button">Delete User</button>
+        </div>
+        
+      </div>
+    </div> 
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/API.js"></script>
+  <script src="./js/contentLoader.js"></script>
+  <script src="./js/navHandler.js"></script>
 </body>
 </html>
