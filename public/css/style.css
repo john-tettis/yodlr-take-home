@@ -99,8 +99,8 @@ nav > div {
   padding: 1rem;
   border-radius: 6px;
   max-width: 100%;
-  -webkit-box-shadow: 2px 2px 8px #000a13;
-          box-shadow: 2px 2px 8px #000a13;
+  -webkit-box-shadow: 1px 2px 6px rgba(0, 10, 19, 0.5);
+          box-shadow: 1px 2px 6px rgba(0, 10, 19, 0.5);
 }
 
 .user-info {
@@ -110,7 +110,7 @@ nav > div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: .5rem;
+  margin: 1rem;
 }
 
 .user-container {
@@ -151,6 +151,10 @@ nav > div {
 #register > div input {
   border-radius: 6px;
   padding: .4rem .5rem;
+}
+
+.register-subtext {
+  padding-left: 1rem;
 }
 
 input {
